@@ -1,0 +1,284 @@
+---
+title: "Data Literacy - MOMENT mal!"
+format: 
+  revealjs:
+    theme: fom.scss
+    logo: fom.jpg
+    footer: "Karsten Lübke | #CIHH22"
+    
+from: markdown+emoji
+---
+```{r setup, include=FALSE}
+library(icons)
+```
+
+## Herzlich Willkommen!
+::: columns
+::: {.column width="60%"}
+
+:heart: Schön dass Sie dabei sind!
+
+:point_right: Interaktion u.a. über [https://tweedback.de/xxxx](https://tweedback.de/xxxx)
+:::
+
+::: {.column width="40%"}
+Right column
+:::
+:::
+
+## UN Ziele
+
+```{r echo=FALSE, fig.align='center', out.width='70%'}
+knitr::include_graphics("img/UNGoals.png")
+```
+
+::: {.aside}
+Quelle: [https://www.un.org/en/sustainable-development-goals](https://www.un.org/en/sustainable-development-goals)
+:::
+
+## :earth_africa: in Daten
+
+:::{.center}
+<iframe src="https://upgrader.gapminder.org/q/37/embed?hasBorder=true&hasOpenSansFont=false" title="73% of people get this question wrong" width="100%" height="500" style="border:none;"></iframe>
+:::
+
+## &#x1F469;&#x200D;&#x1F3EB; Erste Erkenntnisse
+
+<br>
+
+::: {.incremental}
+- Wir brauchen Daten u.a., um die Welt zu beschreiben.
+- Wir liegen mit unseren Vermutungen oft falsch.
+:::
+
+## Daten
+
+Ein Rohstoff des 21. Jahrhunderts (?)
+
+::: center
+
+::: columns
+:::: {.column width="50%"}
+<iframe src="https://giphy.com/embed/A06UFEx8jxEwU" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+::::: {.small}
+[via GIPHY](https://giphy.com/gifs/code-matrix-wallpaper-A06UFEx8jxEwU)
+:::::
+
+::::
+
+:::: {.column width="50%"}
+<iframe src="https://giphy.com/embed/1pm1vEyxqxoaY" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+::::: {.small}
+[via GIPHY](https://giphy.com/gifs/oil-1pm1vEyxqxoaY)
+:::::
+
+::::
+:::
+
+**Wir** sollten lernen Daten verantwortlich bereit zu stellen und zu nutzen.
+
+:::
+
+
+## Data Literacy Framework
+
+```{r echo=FALSE, fig.align='center', out.width='80%'}
+knitr::include_graphics("img/DL-Framework.png")
+```
+
+::: {.aside}
+Quelle: [HFD 47/19 - Future Skills: Ein Framework für Data Literacy](https://hochschulforumdigitalisierung.de/sites/default/files/dateien/HFD_AP_Nr_47_DALI_Kompetenzrahmen_WEB.pdf)
+:::
+
+---
+
+## Eine wackelige Brücke
+
+Von *A1: Daten-Anwendung identifizieren* zu *F3: Wirkung evaluieren*:
+
+::: {.center}
+<iframe src="https://giphy.com/embed/zQxOLmztiIWOs" width="432" height="315" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+:::
+
+::: {.aside}
+[via GIPHY](https://giphy.com/gifs/animal-monkey-gibbon-zQxOLmztiIWOs)
+:::
+
+
+## Beispiel: Covid-19
+
+Fallsterblichkeit [(UK, Delta)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1009243/Technical_Briefing_20.pdf):
+
+
+::: {.incremental}
+- Insgesamt: 0,27%
+- Geimpft: 0,41%, Ungeimpft: 0,17%
+- U50: Geimpft: 0,02%, Ungeimpft 0,03%
+- Ü50: Geimpft: 1,68%, Ungeimpft: 5,96%
+:::
+
+::: {.aside}
+h/t Matthew Brenneman (vio isostat)
+:::
+
+## Frage: Impfung
+
+:hospital: Gemäß den [Daten](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1009243/Technical_Briefing_20.pdf) hilft die Impfung bei *alterslosen* nicht, wohl aber bei unter und über 50 Jährigen :confused:.
+
+Was meinen Sie?
+
+- A: Die Daten sprechen gegen einen positiven Impfeffekt.
+
+- B: Die Daten sprechen für einen positiven Impfeffekt.
+
+- C: Die Daten sind fehlerhaft.
+
+## Alter, Impfung und Verstorben
+
+```{r}
+library(ggplot2)
+library(ggdag)
+
+co <- data.frame(x = c(0.5,0,1), y = c(1,0,0), name = c("A", "I", "V")) 
+
+dag<-dagify(I ~ A,
+            V ~ I,
+            V ~ A,
+            coords = co) %>% 
+  ggdag(node_size = 20, text_size = 8, text = TRUE, text_col = "lightgray") + theme_dag_blank() +
+  geom_dag_edges(arrow_directed = grid::arrow(length = grid::unit(15, "pt"), type = "closed"))  + 
+  geom_text(label = "A - Alter\nI - Impfung\nV - Verstorben", 
+            hjust = 0, vjust = 0,
+            x = 0, y = 0.75, size = 8, color = "darkgrey") +
+  geom_text(label = "+", 
+            hjust = 0, vjust = 0,
+            x = 0.25, y = 0.6, size = 12, color = "darkgreen") +
+   geom_text(label = "+", 
+            hjust = 0, vjust = 0,
+            x = 0.75, y = 0.6, size = 12, color = "darkgreen") +
+  geom_text(label = "-", 
+            hjust = 0, vjust = 0,
+            x = 0.5, y = 0.05, size = 14, color = "red")
+
+dag
+```
+
+
+## Moment!
+
+Daten sprechen nicht für sich, und zu häufig sehen wir in ihnen das, was wir sehen wollen. Daher Menekmonik: 
+
+<br>
+
+::: {.center}
+[**M**essung]{.green}, [**O**rientierung]{.green}, [**M**anipulation]{.green}, [**E**rhebung]{.green}, [**N**atürliche Variation]{.green}, [**T**riebfeder]{.green} 
+:::
+
+## MOMENT: M wie Messung
+
+
+- [**M**essung]{.green}: Wie wurde das Phänomen gemessen – und ist dies angemessen?  Was bedeutet die Zahl? Handelt es sich bei dem angegebenen Wert um eine Summe, Anteil, Mittelwert oder Median - und insbesondere von was? Was steht im Nenner – und ist das angemessen?
+
+## Moment: O wie Orientierung
+
+- [**O**rientierung]{.green}: Womit sollte die Zahl verglichen werden? Ohne Vergleichsmöglichkeit kein Zusammenhang! 80% oder 0,8% - beides kann viel oder wenig sein.
+
+## Moment: M wie Manipulation
+
+- [**M**anipulation]{.green}: Versucht die Abbildung oder Zahl in eine Richtung zu lenken? Wer könnte daran ein Interesse haben?
+
+## Moment: E wie Erhebung
+
+- [**E**rhebung]{.green}: Wie, wann, wo und warum wurden die Daten erhoben? War es eine zufällige Stichprobe oder eine Gelegenheitsstichprobe? Für wen oder was können die Daten "repräsentativ" sein, was ist die (Ziel-)Population? War es eine Beobachtungsstudie oder ein Experiment?
+
+## Moment: N wie Natürliche Variation
+- [**N**atürliche Variation]{.green}: Statistiken schwanken schon rein zufällig - auch gerne zurück zur Mitte, aber auch mal ins extrem. Eine andere Stichprobe liefert i.d.R. auch ein anderes Ergebnis. Wie anders? Auch zufällig kann es Zusammenhänge geben.
+
+## Moment: T wie Triebfeder
+
+- [**T**riebfeder]{.green}: Die Welt ist komplex, es gibt viele Abhängigkeiten. Z.B. können hinter positiven Korrelationen negative kausale Zusammenhänge verborgen sein. Was könnte hier (noch) eine Rolle spielen?
+
+## &#x1F469;&#x200D;&#x1F3EB; (Noch) Eine falsche Metapher
+
+```{r echo=FALSE, fig.align='center', out.width='80%'}
+knitr::include_graphics("img/Meme_Nuggets-Jewels.jpg")
+```
+
+## Data Literacy Education
+
+- In einer datafizierten Welt müssen wir mehr Studierende weiter bringen als je zuvor.
+
+- Mein Job ist es **allen** dabei zu helfen die Welt mit Hilfe von Daten zu verstehen, ohne dabei ein Daten-Clown zu sein. Siehe auch [Data-Literacy-Charta](https://www.stifterverband.org/charta-data-literacy).
+
+::: {.fragment}
+- Curricula etc. sind schon voll :scream:
+:::
+
+## In der Gegenwart ankommen
+
+<center>
+<iframe src="https://giphy.com/embed/10Jpr9KSaXLchW" width="240" height="188" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</center>
+
+ Lehre von Mathematik und Statistik so, als ob wir in einer komplexen (*multivariaten*) Welt leben und Computer erfunden wären.
+
+
+::: {.aside}
+[Via GIPHY](https://giphy.com/gifs/people-hd-gifsremastered-10Jpr9KSaXLchW)
+:::
+
+## Immer dasselbe (?)
+
+::: {.fragment}
+
+> Wir müssen erst [traditionelles Thema] lehren.
+
+:::
+
+<br>
+
+::: {.fragment}
+Wie hoch sind die **Opportunitätskosten**? Das Studium der Fotografie beginnt auch nicht mehr mit Film einlegen.
+:::
+
+::: {.fragment}
+Mögen wir Veränderung?
+:::
+
+## Trotzdem 
+
+<br>
+
+
+<center>
+<iframe src="https://giphy.com/embed/VbQYegO2dseJj48Gaf" width="480" height="366" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</center>
+
+
+::: {.aside}
+[Via GIPHY](https://giphy.com/gifs/moodman-mlk-martin-luther-king-jr-i-have-a-dream-VbQYegO2dseJj48Gaf)
+:::
+
+## Verbündete finden
+
+Z.B. (mit Hamburger Beteiligung)
+
+- Working Group: Data Literacy (Stifterverband): [https://www.stifterverband.org/data-literacy-education](https://www.stifterverband.org/data-literacy-education)
+
+- Critical Big Data and Algorithmic Literacy Network: [https://www.bigdataliteracy.net/](https://www.bigdataliteracy.net/)
+
+## Zum Schluss
+
+<br>
+
+:::{.center}
+Vielen Dank für Ihre Unterstützung! `r icon_style(fontawesome("heart", style = "solid"), fill = "red")`
+:::
+
+
+<br>
+
+- `r fontawesome("envelope", style = "solid")`:  [karsten.luebke@fom.de](<mailto:karsten.luebke@fom.de>)
+- `r fontawesome$brands$mastodon`: [https://ruhr.social/web/@luebby42](https://ruhr.social/web/@luebby42)
