@@ -13,16 +13,22 @@ library(icons)
 ```
 
 ## Herzlich Willkommen!
+
+<br>
+
 ::: columns
 ::: {.column width="60%"}
 
 :heart: Schön dass Sie dabei sind!
 
-:point_right: Interaktion u.a. über [https://tweedback.de/xxxx](https://tweedback.de/xxxx)
+:point_right: Interaktion u.a. über [https://tweedback.de/ev6x](https://tweedback.de/ev6x)
 :::
 
 ::: {.column width="40%"}
-Right column
+```{r echo=FALSE, fig.align='center', out.width='80%'}
+knitr::include_graphics("img/tweedback.png")
+```
+
 :::
 :::
 
@@ -115,7 +121,9 @@ Was meinen Sie?
 
 - [**B**]{.green}: Die Daten sprechen für einen positiven Impfeffekt.
 
-- [**C**]{.green}: Die Daten sind fehlerhaft.
+- [**C**]{.green}: Es kann nicht entschieden werden, ob es einen positiven Impfeffekt gibt.
+
+- [**D**]{.green}: Die Daten sind fehlerhaft.
 
 ## Alter, Impfung und Verstorben
 
