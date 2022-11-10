@@ -26,6 +26,17 @@ Right column
 :::
 :::
 
+## Was Sie erwartet
+
+- Wir gestalten Daten -- und diese gestalten unsere Welt.
+
+- Daten sprechen nicht für sich.
+
+- Mit großen Daten haben wir auch eine große Verantwortung.
+
+- Wir sollten die alten Fehler nicht in größeren Maßstab wiederholen.
+
+
 ## UN Ziele
 
 ```{r echo=FALSE, fig.align='center', out.width='70%'}
@@ -51,35 +62,6 @@ Quelle: [https://www.un.org/en/sustainable-development-goals](https://www.un.org
 - Wir liegen mit unseren Vermutungen oft falsch.
 :::
 
-## Daten
-
-Ein Rohstoff des 21. Jahrhunderts (?)
-
-::: center
-
-::: columns
-:::: {.column width="50%"}
-<iframe src="https://giphy.com/embed/A06UFEx8jxEwU" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-::::: {.small}
-[via GIPHY](https://giphy.com/gifs/code-matrix-wallpaper-A06UFEx8jxEwU)
-:::::
-
-::::
-
-:::: {.column width="50%"}
-<iframe src="https://giphy.com/embed/1pm1vEyxqxoaY" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-::::: {.small}
-[via GIPHY](https://giphy.com/gifs/oil-1pm1vEyxqxoaY)
-:::::
-
-::::
-:::
-
-**Wir** sollten lernen Daten verantwortlich bereit zu stellen und zu nutzen.
-
-:::
 
 
 ## Data Literacy Framework
@@ -129,11 +111,11 @@ Gemäß den [Daten](https://assets.publishing.service.gov.uk/government/uploads/
 
 Was meinen Sie?
 
-- A: Die Daten sprechen gegen einen positiven Impfeffekt.
+- [**A**]{.green}: Die Daten sprechen gegen einen positiven Impfeffekt.
 
-- B: Die Daten sprechen für einen positiven Impfeffekt.
+- [**B**]{.green}: Die Daten sprechen für einen positiven Impfeffekt.
 
-- C: Die Daten sind fehlerhaft.
+- [**C**]{.green}: Die Daten sind fehlerhaft.
 
 ## Alter, Impfung und Verstorben
 
@@ -173,7 +155,7 @@ Daten sprechen nicht für sich, und zu häufig sehen wir in ihnen das, was wir s
 <br>
 
 ::: {.center}
-[**M**essung]{.green}, [**O**rientierung]{.green}, [**M**anipulation]{.green}, [**E**rhebung]{.green}, [**N**atürliche Variation]{.green}, [**T**riebfeder]{.green} 
+[**M**]{.green}essung, [**O**]{.green}rientierung, [**M**]{.green}anipulation, [**E**]{.green}rhebung, [**N**]{.green}atürliche Variation, [**T**]{.green}riebfeder 
 :::
 
 ## MOMENT: M wie Messung
@@ -202,15 +184,30 @@ Daten sprechen nicht für sich, und zu häufig sehen wir in ihnen das, was wir s
 
 ## &#x1F469;&#x200D;&#x1F3EB; (Noch) Eine falsche Metapher
 
-```{r echo=FALSE, fig.align='center', out.width='80%'}
+```{r echo=FALSE, fig.align='center', out.width='70%'}
 knitr::include_graphics("img/Meme_Nuggets-Jewels.jpg")
 ```
+
+## Reklame
+
+Studierende sollten lernen *hinter die Daten zu gucken*:
+
+```{r echo=FALSE, fig.align='center', out.width='70%'}
+knitr::include_graphics("img/Paper.png")
+```
+
+
+
+::: {.aside}
+[https://doi.org/10.1007/s11943-022-00311-9](https://doi.org/10.1007/s11943-022-00311-9)
+:::
+
 
 ## Data Literacy Education
 
 - In einer datafizierten Welt müssen wir mehr Studierende weiter bringen als je zuvor.
 
-- Mein Job ist es **allen** dabei zu helfen, die Welt mit Hilfe von Daten zu verstehen, ohne dabei ein Daten-Clown zu sein. Siehe auch [Data-Literacy-Charta](https://www.stifterverband.org/charta-data-literacy).
+- Aufgabe muss es sein [**allen**]{.green} dabei zu helfen, die Welt mit Hilfe von Daten zu verstehen, ohne dabei ein Daten-Clown zu sein :point_right: [Data-Literacy-Charta](https://www.stifterverband.org/charta-data-literacy).
 
 ::: {.fragment}
 - Curricula etc. sind schon voll :scream:
@@ -218,18 +215,20 @@ knitr::include_graphics("img/Meme_Nuggets-Jewels.jpg")
 
 ## In der Gegenwart ankommen
 
+<br>
+
 <center>
 <iframe src="https://giphy.com/embed/10Jpr9KSaXLchW" width="240" height="188" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 </center>
 
- Lehre von Mathematik und Statistik so, als ob wir in einer komplexen (*multivariaten*) Welt leben und Computer erfunden wären.
+Lehre von Mathematik und Statistik so, als ob wir in einer komplexen (*multivariaten*) Welt leben und Computer erfunden wären.
 
 
 ::: {.aside}
 [Via GIPHY](https://giphy.com/gifs/people-hd-gifsremastered-10Jpr9KSaXLchW)
 :::
 
-## Immer dasselbe (?)
+## Immer dasselbe :angry: (?)
 
 ::: {.fragment}
 
@@ -240,7 +239,7 @@ knitr::include_graphics("img/Meme_Nuggets-Jewels.jpg")
 <br>
 
 ::: {.fragment}
-Wie hoch sind die **Opportunitätskosten**? Das Studium der Fotografie beginnt auch nicht mehr mit Film einlegen.
+Wie hoch sind die [**Opportunitätskosten**]{.green}? Das Studium der Fotografie beginnt auch nicht mehr mit Film einlegen.
 :::
 
 ::: {.fragment}
@@ -261,7 +260,7 @@ Mögen wir Veränderung?
 [Via GIPHY](https://giphy.com/gifs/moodman-mlk-martin-luther-king-jr-i-have-a-dream-VbQYegO2dseJj48Gaf)
 :::
 
-## Verbündete finden
+## Gemeinsam :muscle:
 
 Z.B. (mit Hamburger Beteiligung)
 
@@ -269,12 +268,12 @@ Z.B. (mit Hamburger Beteiligung)
 
 - Critical Big Data and Algorithmic Literacy Network: [https://www.bigdataliteracy.net/](https://www.bigdataliteracy.net/)
 
-## Zum Schluss
+## :checkered_flag:
 
 <br>
 
 :::{.center}
-Vielen Dank für Ihre Unterstützung? `r icon_style(fontawesome("heart", style = "solid"), fill = "red")`
+Vielen Dank für Ihre Unterstützung `r icon_style(fontawesome("heart", style = "solid"), fill = "red")`
 :::
 
 
