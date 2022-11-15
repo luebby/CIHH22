@@ -32,15 +32,15 @@ knitr::include_graphics("img/tweedback.png")
 :::
 :::
 
-## Was Sie erwartet
-
-- Wir gestalten Daten -- und diese gestalten unsere Welt.
+## Was Sie erwartet:
 
 - Daten sprechen nicht für sich.
 
 - Mit großen Daten haben wir auch eine große Verantwortung.
 
-- Wir sollten die alten Fehler nicht in größeren Maßstab wiederholen.
+- Wir sollten die alten Fehler nicht in noch größerem Maßstab wiederholen.
+
+- Der Weg dahin erfordert Veränderung.
 
 
 ## UN Ziele
@@ -84,11 +84,11 @@ Quelle: [HFD 47/19 - Future Skills: Ein Framework für Data Literacy](https://ho
 
 ## Eine wackelige Brücke
 
-Von *A1: Daten-Anwendung identifizieren* zu *F3: Wirkung evaluieren*:
-
 ::: {.center}
 <iframe src="https://giphy.com/embed/zQxOLmztiIWOs" width="432" height="315" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 :::
+
+Falsch machen geht leicht. Wir vergessen wie schwierig es wirklich ist.
 
 ::: {.aside}
 [via GIPHY](https://giphy.com/gifs/animal-monkey-gibbon-zQxOLmztiIWOs)
@@ -113,7 +113,7 @@ h/t Matthew Brenneman (via isostat)
 
 ## Frage: Impfung
 
-Gemäß den [Daten](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1009243/Technical_Briefing_20.pdf) hilft die Impfung bei *alterslosen* nicht, wohl aber bei unter und über 50 Jährigen :confused:
+Gemäß der [Daten](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1009243/Technical_Briefing_20.pdf) hilft die Impfung bei *alterslosen* nicht, wohl aber bei unter und über 50 Jährigen :confused:
 
 Was meinen Sie?
 
@@ -158,7 +158,7 @@ dag
 
 ## Moment!
 
-Daten sprechen nicht für sich, und zu häufig sehen wir in ihnen das, was wir sehen wollen. Daher Mnemonik: 
+Daten sprechen nicht für sich,und zu häufig sehen wir in ihnen das, was wir sehen wollen. Daher Mnemonik: 
 
 <br>
 
@@ -177,7 +177,7 @@ Daten sprechen nicht für sich, und zu häufig sehen wir in ihnen das, was wir s
 
 ## Moment: M wie Manipulation
 
-- [**M**anipulation]{.green}: Versucht die Abbildung oder Zahl in eine Richtung zu lenken? Wer könnte daran ein Interesse haben?
+- [**M**anipulation]{.green}: Versucht die Abbildung oder Zahl die Interpretation in eine Richtung zu lenken? Wer könnte daran ein Interesse haben?
 
 ## Moment: E wie Erhebung
 
@@ -190,15 +190,26 @@ Daten sprechen nicht für sich, und zu häufig sehen wir in ihnen das, was wir s
 
 - [**T**riebfeder]{.green}: Die Welt ist komplex, es gibt viele Abhängigkeiten. Z.B. können hinter positiven Korrelationen negative kausale Zusammenhänge verborgen sein. Was könnte hier (noch) eine Rolle spielen?
 
-## &#x1F469;&#x200D;&#x1F3EB; (Noch) Eine falsche Metapher
+## &#x1F469;&#x200D;&#x1F3EB; Eine falsche Metapher
 
 ```{r echo=FALSE, fig.align='center', out.width='70%'}
 knitr::include_graphics("img/Meme_Nuggets-Jewels.jpg")
 ```
 
+## Beispiel: Gender-Pay-Gap Reversed?
+
+
+<center>
+<iframe src="https://www.tagesschau.de/wirtschaft/unternehmen/frauen-vorstaende-gehalt-dax-frauenquote-gehaltsunterschiede-101.html" width="100%" height="500"></iframe>
+</center>
+
+::: {.aside}
+[https://www.tagesschau.de/wirtschaft/unternehmen/frauen-vorstaende-gehalt-dax-frauenquote-gehaltsunterschiede-101.html](https://www.tagesschau.de/wirtschaft/unternehmen/frauen-vorstaende-gehalt-dax-frauenquote-gehaltsunterschiede-101.html)
+:::
+
 ## Reklame
 
-Studierende sollten lernen *hinter die Daten zu gucken*:
+Studierende sollten lernen [*hinter die Daten*]{.green} zu gucken:
 
 ```{r echo=FALSE, fig.align='center', out.width='70%'}
 knitr::include_graphics("img/Paper.png")
@@ -217,8 +228,10 @@ knitr::include_graphics("img/Paper.png")
 
 - Aufgabe muss es sein [**allen**]{.green} dabei zu helfen, die Welt mit Hilfe von Daten zu verstehen, ohne dabei ein Daten-Clown zu sein :point_right: [Data-Literacy-Charta](https://www.stifterverband.org/charta-data-literacy).
 
+::: {.center}
 ::: {.fragment}
-- Curricula etc. sind schon voll :scream:
+:scream: Curricula etc. sind schon voll :scream:
+:::
 :::
 
 ## In der Gegenwart ankommen
@@ -229,7 +242,7 @@ knitr::include_graphics("img/Paper.png")
 <iframe src="https://giphy.com/embed/10Jpr9KSaXLchW" width="240" height="188" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 </center>
 
-Lehre von Mathematik und Statistik so, als ob wir in einer komplexen (*multivariaten*) Welt leben und Computer erfunden wären.
+Wir sollten Mathematik und Statistik so lehren und lernen, als ob wir in einer komplexen (*multivariaten*) Welt leben würden und Computer erfunden wären.
 
 
 ::: {.aside}
@@ -247,7 +260,7 @@ Lehre von Mathematik und Statistik so, als ob wir in einer komplexen (*multivari
 <br>
 
 ::: {.fragment}
-Wie hoch sind die [**Opportunitätskosten**]{.green}? Das Studium der Fotografie beginnt auch nicht mehr mit Film einlegen.
+Wie hoch sind die [**Opportunitätskosten**]{.green}? Das Studium der Fotografie beginnt auch nicht mehr dem Einlegen eines Filmes.
 :::
 
 ::: {.fragment}
@@ -267,6 +280,12 @@ Mögen wir Veränderung?
 ::: {.aside}
 [Via GIPHY](https://giphy.com/gifs/moodman-mlk-martin-luther-king-jr-i-have-a-dream-VbQYegO2dseJj48Gaf)
 :::
+
+## Erwarten wir &#x1F984; ?
+
+```{r echo=FALSE, fig.align='center', out.width='30%'}
+knitr::include_graphics("img/Meme-Mathe_Statistik.jpg")
+```
 
 ## Gemeinsam :muscle:
 
@@ -288,4 +307,4 @@ Vielen Dank für Ihre Unterstützung `r icon_style(fontawesome("heart", style = 
 <br>
 
 - `r fontawesome("envelope", style = "solid")`:  [karsten.luebke@fom.de](<mailto:karsten.luebke@fom.de>)
-- `r fontawesome$brands$mastodon`: [@luebby42@ruhr.social](https://ruhr.social/web/@luebby42)
+- `r fontawesome$brands$mastodon`: [@luebby42@data-folks.masto.host](https://data-folks.masto.host/web/@luebby42)
