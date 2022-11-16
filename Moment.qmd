@@ -19,7 +19,7 @@ library(icons)
 ::: columns
 ::: {.column width="60%"}
 
-:heart: Schön dass Sie dabei sind!
+:heart: Schön, dass Sie dabei sind!
 
 :point_right: Interaktion u.a. über [https://tweedback.de/ev6x](https://tweedback.de/ev6x)
 :::
@@ -32,7 +32,7 @@ knitr::include_graphics("img/tweedback.png")
 :::
 :::
 
-## Was Sie erwartet:
+## Kerngedanken
 
 - Daten sprechen nicht für sich.
 
@@ -88,7 +88,7 @@ Quelle: [HFD 47/19 - Future Skills: Ein Framework für Data Literacy](https://ho
 <iframe src="https://giphy.com/embed/zQxOLmztiIWOs" width="432" height="315" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 :::
 
-Falsch machen geht leicht. Wir vergessen wie schwierig es wirklich ist.
+Falsch machen geht leicht. Wir vergessen, wie schwierig es wirklich ist.
 
 ::: {.aside}
 [via GIPHY](https://giphy.com/gifs/animal-monkey-gibbon-zQxOLmztiIWOs)
@@ -158,7 +158,7 @@ dag
 
 ## Moment!
 
-Daten sprechen nicht für sich,und zu häufig sehen wir in ihnen das, was wir sehen wollen. Daher Mnemonik: 
+Daten sprechen nicht für sich und zu häufig sehen wir in ihnen das, was wir sehen wollen. Daher Mnemonik: 
 
 <br>
 
@@ -169,7 +169,7 @@ Daten sprechen nicht für sich,und zu häufig sehen wir in ihnen das, was wir se
 ## MOMENT: M wie Messung
 
 
-- [**M**essung]{.green}: Wie wurde das Phänomen gemessen -- und ist dies angemessen?  Was bedeutet die Zahl? Handelt es sich bei dem angegebenen Wert um eine Summe, Anteil, Mittelwert oder Median -- und insbesondere von was? Was steht im Nenner -- und ist das der richtige Bezug?
+- [**M**essung]{.green}: Wie wurde das Phänomen gemessen -- und ist dies angemessen?  Was bedeutet die Zahl? Handelt es sich bei dem angegebenen Wert um eine Summe, einen Anteil, Mittelwert oder Median -- und insbesondere von was? Was steht im Nenner -- und ist das der richtige Bezug?
 
 ## Moment: O wie Orientierung
 
@@ -184,7 +184,7 @@ Daten sprechen nicht für sich,und zu häufig sehen wir in ihnen das, was wir se
 - [**E**rhebung]{.green}: Wie, wann, wo und warum wurden die Daten erhoben? War es eine zufällige Stichprobe oder eine Gelegenheitsstichprobe? Für wen oder was können die Daten *repräsentativ* sein, was ist die (Ziel-)Population? War es eine Beobachtungsstudie oder ein Experiment?
 
 ## Moment: N wie Natürliche Variation
-- [**N**atürliche Variation]{.green}: Statistiken schwanken schon rein zufällig -- auch gerne zurück zur Mitte, aber auch mal ins extrem. Eine andere Stichprobe liefert i.d.R. auch ein anderes Ergebnis. Wie anders? Auch zufällig kann es Zusammenhänge geben.
+- [**N**atürliche Variation]{.green}: Statistiken schwanken schon rein zufällig -- auch gerne zurück zur Mitte, aber auch mal ins Extrem. Eine andere Stichprobe liefert i.d.R. auch ein anderes Ergebnis. Wie anders? Auch zufällig kann es Zusammenhänge geben.
 
 ## Moment: T wie Triebfeder
 
@@ -209,7 +209,7 @@ knitr::include_graphics("img/Meme_Nuggets-Jewels.jpg")
 
 ## Reklame
 
-Studierende sollten lernen [*hinter die Daten*]{.green} zu gucken:
+Studierende sollten lernen, [*hinter die Daten*]{.green} zu gucken:
 
 ```{r echo=FALSE, fig.align='center', out.width='70%'}
 knitr::include_graphics("img/Paper.png")
@@ -226,7 +226,7 @@ knitr::include_graphics("img/Paper.png")
 
 - In einer datafizierten Welt müssen wir mehr Studierende weiter bringen als je zuvor.
 
-- Aufgabe muss es sein [**allen**]{.green} dabei zu helfen, die Welt mit Hilfe von Daten zu verstehen, ohne dabei ein Daten-Clown zu sein :point_right: [Data-Literacy-Charta](https://www.stifterverband.org/charta-data-literacy).
+- Aufgabe muss es sein, [**allen**]{.green} dabei zu helfen, die Welt mit Hilfe von Daten zu verstehen, ohne dabei ein Daten-Clown zu sein :point_right: [Data-Literacy-Charta](https://www.stifterverband.org/charta-data-literacy).
 
 ::: {.center}
 ::: {.fragment}
