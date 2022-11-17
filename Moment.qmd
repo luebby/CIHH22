@@ -88,7 +88,7 @@ Quelle: [HFD 47/19 - Future Skills: Ein Framework für Data Literacy](https://ho
 <iframe src="https://giphy.com/embed/zQxOLmztiIWOs" width="432" height="315" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 :::
 
-Falsch machen geht leicht. Wir vergessen, wie schwierig es wirklich ist.
+Falsch machen geht leicht. Wir vergessen, wie schwierig es ist, es richtig zu machen.
 
 ::: {.aside}
 [via GIPHY](https://giphy.com/gifs/animal-monkey-gibbon-zQxOLmztiIWOs)
@@ -196,6 +196,9 @@ Daten sprechen nicht für sich und zu häufig sehen wir in ihnen das, was wir se
 knitr::include_graphics("img/Meme_Nuggets-Jewels.jpg")
 ```
 
+::: {.aside}
+[Best (2002)](http://www.statlit.org/pdf/2002BestASA.pdf)
+:::
 ## Beispiel: Gender-Pay-Gap Reversed?
 
 
@@ -251,20 +254,17 @@ Wir sollten Mathematik und Statistik so lehren und lernen, als ob wir in einer k
 
 ## Immer dasselbe :angry: (?)
 
-::: {.fragment}
-
 > Wir müssen erst [traditionelles Thema] lehren.
 
-:::
 
 <br>
 
 ::: {.fragment}
-Wie hoch sind die [**Opportunitätskosten**]{.green}? Das Studium der Fotografie beginnt auch nicht mehr dem Einlegen eines Filmes.
-:::
+- Wie hoch sind die [**Opportunitätskosten**]{.green}? Das Studium der Fotografie beginnt auch nicht mehr dem Einlegen eines Filmes.
 
-::: {.fragment}
-Mögen wir Veränderung?
+- Mögen wir Veränderung?
+
+- Wo ist unser *Skin in the Game* ([Taleb](https://medium.com/incerto/the-intellectual-yet-idiot-13211e2d0577))?
 :::
 
 ## Trotzdem 
@@ -281,7 +281,7 @@ Mögen wir Veränderung?
 [Via GIPHY](https://giphy.com/gifs/moodman-mlk-martin-luther-king-jr-i-have-a-dream-VbQYegO2dseJj48Gaf)
 :::
 
-## Erwarten wir &#x1F984; ?
+## Erwartungshaltung &#x1F984;
 
 ```{r echo=FALSE, fig.align='center', out.width='30%'}
 knitr::include_graphics("img/Meme-Mathe_Statistik.jpg")
